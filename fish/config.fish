@@ -7,6 +7,7 @@ alias lt2="exa --long --tree --level=2"
 alias lt3="exa --long --tree --level=3"
 alias lt4="exa --long --tree --level=4"
 alias hx="helix"
+alias cd="z"
 if status is-interactive
     # Commands to run in interactive sessions can go here
     zoxide init fish | source
