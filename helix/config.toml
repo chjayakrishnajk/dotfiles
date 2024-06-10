@@ -61,3 +61,6 @@ e="scroll_up"
 n="scroll_down"
 e="scroll_up"
 
+[editor]
+auto-save=true
+auto-completion=true

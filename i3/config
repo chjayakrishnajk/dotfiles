@@ -182,6 +182,7 @@ mode "resize" {
 }
 
 bindsym $mod+p mode "resize"
+bindsym $mod+Tab workspace next
 #exec setxkbmap us -variant colemak
 #exec xmodmap -e "keycode 64 = Mode_switch"
 #exec xmodmap -e "keycode 43 = h H Left H"
