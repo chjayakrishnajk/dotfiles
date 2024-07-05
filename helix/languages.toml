@@ -115,3 +115,19 @@ args = { console = "internalConsole", attachCommands = [ "platform select remote
 [[grammar]]
 name = "cpp"
 source = { git = "https://github.com/tree-sitter/tree-sitter-cpp", rev = "670404d7c689be1c868a46f919ba2a3912f2b7ef" }
+
+#lsp-ai
+[[language]]
+name = "rust"
+scope = "source.rust"
+file-types = ["rs"]
+language-servers = [ "lsp-ai-lsp" ]
+[language-server.mylang-lsp]
+command = "lsp-ai"
+  [language-server.mylang-lsp.config.models]
+    [language-server.mylang-lsp.config.models.model1]
+    type = "open_ai"
+    chat_endpoint = "https://api.groq.com/openai/v1/chat/completions"
+    model = "llama3-8b-8192"
+    #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
+    auth_token_env_var_name = "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"
